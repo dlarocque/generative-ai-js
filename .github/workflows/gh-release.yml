@@ -25,9 +25,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create Github release
-        run: |
-          gh release create "$tag" \
-              --repo="$GITHUB_REPOSITORY" \
-              --title="$tag" \
-              --generate-notes \
-              --verify-tag
+        run: echo "hello"
