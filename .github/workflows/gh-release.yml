@@ -25,7 +25,7 @@ permissions:
 jobs:
   release:
     name: Release pushed tag
-    if: ${{ contains(github.ref_name, 'google/generative-ai') }}
+    if: ${{ startsWith(github.ref_name, 'google/generative-ai') }}
     runs-on: ubuntu-latest
     steps:
       - name: Create Github release
