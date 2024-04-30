@@ -19,9 +19,6 @@ on:
     tags:
       - '*'
 
-permissions:
-  contents: write
-
 jobs:
   release:
     name: Release pushed tag
